@@ -46,6 +46,7 @@ npx expo start
 - Expo Go 앱: QR 코드 스캔하여 실행
 
 ## 프로젝트 구조
+```
 app/
 ├── (tabs)/
 │ ├── index.tsx # 지도 화면
@@ -54,6 +55,7 @@ app/
 │ └── layout.tsx # 탭 네비게이션 설정
 ├── components/ # 재사용 가능한 컴포넌트
 └── constants/ # 상수 및 설정 파일
+```
 
 
 ## 사용된 주요 기술

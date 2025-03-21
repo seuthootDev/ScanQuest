@@ -1,50 +1,65 @@
-# Welcome to your Expo app 👋
+# Scanquest - AR 기반 관광 탐험 앱 🌏
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 프로젝트 소개
 
-## Get started
+Scanquest는 AR(증강현실) 기술을 활용한 새로운 방식의 관광 탐험 앱입니다. 카메라로 주변 환경을 스캔하면서 역사적 장소, 문화유산, 관광 명소 등을 발견하고 정보를 수집할 수 있습니다.
 
-1. Install dependencies
+### 주요 기능
+- 📍 실시간 위치 기반 지도
+- 📱 AR 카메라를 통한 장소 스캔
+- 👤 개인 탐험 기록 대시보드
+- ✨ 발견한 장소에 대한 상세 정보 제공
 
-   ```bash
-   npm install
-   ```
+## 개발 환경 설정
 
-2. Start the app
+### 1. 필수 설치 항목
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+- Node.js (v18 이상)
+- npm (v9 이상)
+- Expo CLI
 ```bash
-npm run reset-project
+npm install -g expo-cli
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. 프로젝트 시작하기
 
-## Learn more
+1. 저장소 클론
+```bash
+git clone [repository-url]
+cd scanquest
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+2. 의존성 설치
+```bash
+npm install
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+3. 개발 서버 실행
+```bash
+npx expo start
+```
 
-## Join the community
+### 3. 앱 실행 방법
 
-Join our community of developers creating universal apps.
+- iOS 시뮬레이터: `i`를 눌러 실행
+- 안드로이드 에뮬레이터: `a`를 눌러 실행
+- Expo Go 앱: QR 코드 스캔하여 실행
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 프로젝트 구조
+app/
+├── (tabs)/
+│ ├── index.tsx # 지도 화면
+│ ├── dashboard.tsx # 대시보드 화면
+│ ├── camera.tsx # AR 카메라 화면
+│ └── layout.tsx # 탭 네비게이션 설정
+├── components/ # 재사용 가능한 컴포넌트
+└── constants/ # 상수 및 설정 파일
+
+
+## 사용된 주요 기술
+
+- React Native
+- Expo
+- expo-camera (AR 기능)
+- react-native-maps (지도 기능)
+- expo-location (위치 서비스)
